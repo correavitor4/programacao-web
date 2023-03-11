@@ -1,0 +1,16 @@
+version: '3.5'
+
+services:
+  php:
+    image: correavitor4/php-aless-trab
+    restart: always
+    container_name: php-container
+    ports:
+      - "7880:80"
+    
+  python:
+    image: correavitor4/python-trab-aless
+    restart: always
+    container_name: python-container
+    ports:
+      - "18000:8000"
